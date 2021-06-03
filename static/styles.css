@@ -1,0 +1,213 @@
+/* 
+    BASE.HTML
+*/
+
+body {
+    background-color: #3ec1d3;
+}
+
+
+/* Bootstrap classes */
+
+.container-fluid {
+    padding: 0px;
+}
+
+
+/* Navigation */
+
+#navigation {
+    background-color: #f6f7d7;
+}
+
+.navbar {
+    padding: 20px 0;
+}
+
+.navbar-brand {
+    color: #ff165d;
+    padding-left: 80px;
+    font-weight: 600;
+}
+
+.navbar-brand:hover {
+    color: #3ec1d3;
+}
+
+.navbar-toggler-icon {
+    color: #ff165d;
+    font-size: 28px;
+    padding-top: 8px;
+}
+
+.navbar-nav .nav-link {
+    color: #ff165d;
+    margin-left: 20px !important;
+    padding-left: 80px;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #3ec1d3;
+}
+
+.navbar-toggler-icon {
+    transition: all .5s ease-in-out;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon:hover {
+    transform: scale(1.1);
+}
+
+
+/* 
+    ANIMATION
+*/
+
+.wave-top {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+
+/* 
+    INDEX.HTML
+*/
+
+#content {
+    display: none;
+}
+
+#loading {
+    top: 30%;
+    left: 35%;
+    margin: auto;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background: url(https://media.giphy.com/media/kn4jCiHuiK4Hu4HhFa/giphy.gif) no-repeat;
+    background-color: #3ec1d3;
+    cursor: wait;
+}
+
+
+/* Profile Header */
+
+#profile-header {
+    background-color: #ff9a00;
+    width: 100%;
+    padding: 20% 0 10% 0;
+    margin: 0px;
+}
+
+#profile-header h1 {
+    font-size: 5rem;
+    display: inline;
+    text-align: left;
+    margin-left: 80px;
+    color: #3ec1d3;
+    z-index: 100;
+}
+
+#profile-header h1 span {
+    margin-left: 80px;
+}
+
+#profile-header img {
+    margin-left: 80px;
+    border-radius: 100%;
+}
+
+
+/* Profile Statistics */
+
+#statistics {
+    color: #ff165d;
+    padding: 50px 80px;
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+#statistics .card {
+    margin-top: 50px;
+    margin-right: 25px;
+    border-radius: 25px;
+    box-shadow: 0 6px 10px #ff165d, 0 0 6px #ff165d;
+    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+    cursor: pointer;
+}
+
+#statistics .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px #ff165d, 0 4px 8px #ff165d;
+}
+
+#statistics .card-title {
+    font-size: 1.5rem;
+}
+
+#statistics .card-text {
+    font-size: 1.2rem;
+}
+
+
+/* 
+    ARTIST.HTML
+*/
+
+
+/* Canvas */
+
+#collage {
+    background-color: #ff9a00;
+    height: 20%;
+    width: 100%;
+    padding-top: 18%;
+}
+
+#collage h1 {
+    font-size: 5rem;
+    color: #3ec1d3;
+    display: inline;
+    text-align: left;
+    margin-left: 80px;
+    position: absolute;
+}
+
+#collage img {
+    padding: 150px 50px 100px 50px;
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 10px 15px 25px 0 rgba(0, 0, 0, .2);
+    transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+#collage img:hover {
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .1);
+}
+
+#collage div .btn {
+    letter-spacing: 0.5rem;
+    font-weight: bold;
+    /* padding: 10px; */
+    margin-bottom: 80px;
+    margin-top: 50px;
+    padding: 20px 7px;
+    transition: all .6s;
+}
+
+#collage div .btn:hover {
+    transform: scale(1.2);
+}

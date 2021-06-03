@@ -1,0 +1,22 @@
+{% extends "base.html" %} {% block title%}Welcome{% endblock %} {% block content%}
+<section>
+    <div id="collage">
+        <h1 id="collage-header"> Top Tracks </h1>
+        <img src={{url_for( 'static', filename='images/collage.png' )}} alt="">
+        <div class="container-fluid text-center position">
+            <button id="abtn" class="btn btn-dark" type="button" name="button">Change Background</button>
+        </div>
+    </div>
+    <!-- <div class="container-fluid">
+        {% for track in tracks['items'] %}
+            <p>Track: {{track.name}}</p>
+            <p>Artist(s):
+            {% for artist in track.artists%}
+                {{artist.name}},
+            {% endfor %}
+            </p>
+        {% endfor %}
+    </div> -->
+</section>
+
+{% endblock %}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>{%block title%}Album Cover{% endblock %}</title>
+    <!-- Bootstrap Scripts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/0a646c5993.js" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome JS -->
+
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="{{url_for( 'static', filename='styles.css' )}}" />
+
+</head>
+
+<body>
+    <div id="loading"></div>
+    <section id="navigation">
+        <nav class="navbar navbar-expand-lg shadow-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">Spotify Wallpaper Gen</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="toggle fas fa-bars"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+                    <!-- links -->
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/tracks">Top tracks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/artists">Top artists</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+    </section>
+    <div class="waves">
+        <svg class="wave-top" width="100" viewBox="0 0 1200 250">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 108.306L50 114.323C100 120.34 200 132.374 300 168.476C400 204.578 500 264.749 600 246.698C700 228.647 800 132.374 900 108.306C1000 84.2382 1100 132.374 1150 156.442L1200 180.51V-8.5451e-06H1150C1100 -8.5451e-06 1000 -8.5451e-06 900 -8.5451e-06C800 -8.5451e-06 700 -8.5451e-06 600 -8.5451e-06C500 -8.5451e-06 400 -8.5451e-06 300 -8.5451e-06C200 -8.5451e-06 100 -8.5451e-06 50 -8.5451e-06H0V108.306Z" fill="#3ec1d3"/>
+        </svg>
+    </div>
+
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+    </script>
+
+    <!-- Base JS -->
+    <script src="static/background.js" charset="utf-8"></script>
+
+    <!-- Animation library -->
+    <script src="static/anime.min.js"></script>
+
+
+    <script type="text/javascript">
+        // <![CDATA[
+        function preloader() {
+            document.getElementById("loading").style.display = "none";
+            document.getElementById("content").style.display = "block";
+        } //preloader
+        window.onload = setTimeout(preloader, 2000);
+        // ]]>
+    </script>
+
+
+</body>
+
+</html>

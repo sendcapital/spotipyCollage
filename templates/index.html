@@ -1,0 +1,69 @@
+{% extends "base.html" %} {% block title%}Welcome{% endblock %} {% block content%}
+<section>
+    <div class="container-fluid">
+        <!-- Profile Header -->
+        <div id="profile-header" class="row">
+            <div class="col-md-6">
+                <h1><i>
+                    {{ user.display_name }}'s 
+                    <span> profile </span>
+                </i></h1>
+            </div>
+            <div class="col-md-6">
+                {% if user.images %}
+                <img src="{{user.images[0].url}}" class="img-square"> {% else %}
+                <img src="https://static.thenounproject.com/png/1554490-200.png" class="img-square"> {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <!-- Profile Statistics -->
+        <div id="statistics" class="row justify-content-center">
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="card bg-dark">
+                    <div class="card-body">
+                        <h5 class="card-title">Followers</h5>
+                        <p class="card-text">{{user.followers['total']}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="card bg-dark">
+                    <div class="card-body">
+                        <h5 class="card-title">Following</h5>
+                        <p class="card-text">{{following.artists['total']}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+                <div class="card bg-dark">
+                    <div class="card-body">
+                        <h5 class="card-title">Recently played</h5>
+                        <p class="card-text">{{recent_played['items'][0]['track']['name']}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4">
+                <div class="card bg-dark">
+                    <div class="card-body">
+                        <h5 class="card-title">Playlists</h5>
+                        <p class="card-text">{{playlists['total']}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <h3>Playlists</h3>
+    <ul>
+        {% for play in playlists %}
+        <li>
+            {{play.name}}
+        </li>
+        {% endfor %}
+    </ul> -->
+
+</section>
+{% endblock %}
