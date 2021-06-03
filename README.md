@@ -7,19 +7,19 @@ Built with Flask, Spotipy and Pillow.
 
 ## Screenshots
 
-<h3 style="text-align: center; font-weight: 600;">Front Page</h3>
+
 <p align="center">
 <img src="https://github.com/EatSleepBeatMeat/spotipyCollage/blob/main/screenshots/Frontpage.PNG?raw=true" alt=" " width="700"/>
 </p>
-<h3 style="text-align: center; font-weight: 600;">Top Tracks</h3>
+
 <p align="center">
 <img src="https://github.com/EatSleepBeatMeat/spotipyCollage/blob/main/screenshots/page2.PNG?raw=true" alt=" " width="700"/>
 </p>
-<h3 style="text-align: center; font-weight: 600;">Top Artists</h3>
+
 <p align="center">
 <img src="https://github.com/EatSleepBeatMeat/spotipyCollage/blob/main/screenshots/page3.PNG?raw=true" alt=" " width="700"/>
 </p>
-<h3 style="text-align: center; font-weight: 600;">Background Change</h3>
+
 <p align="center">
     <img src="https://github.com/EatSleepBeatMeat/spotipyCollage/blob/main/screenshots/page3alt.PNG?raw=true" alt=" " width="700" />
 </p>
